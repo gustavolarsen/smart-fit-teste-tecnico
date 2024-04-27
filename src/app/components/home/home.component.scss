@@ -1,0 +1,27 @@
+.home {
+  font-family: Gotham, 'sans-serif';
+  color: var(--dark-grey);
+
+  .title {
+    max-width: 350px;
+
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+    }
+  }
+
+  .line {
+    margin: 1.5rem 0;
+    background-color: var(--dark-grey);
+    width: 6rem;
+    height: 0.70rem;
+  }
+
+  p {
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+
+
+}
