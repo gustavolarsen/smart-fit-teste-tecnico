@@ -3,6 +3,8 @@
 :root {
   --dark-grey: #333333;
   --light-grey: #808080;
+  --super-light-grey: #e7e7e7;
+  --ultra-light-grey: #f7f7f7;
   --yellow: #FFB612;
   --red: #dc0a17;
   --green: #2FC022;
@@ -40,4 +42,10 @@ button {
     border: 1px solid var(--light-grey);
     background-color: var(--white);
   }
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: var(--super-light-grey);
 }
