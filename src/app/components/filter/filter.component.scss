@@ -1,0 +1,49 @@
+.filter {
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin: 2rem 0;
+
+  .filter-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .filter-form {
+    h2 {
+      font-weight: 300;
+      margin: 1rem 0;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .input-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+
+        &.checkbox {
+          margin: 1.2rem 0;
+        }
+
+        label {
+          margin-left: 0.5rem;
+        }
+      }
+
+      .button-wrapper {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+    }
+  }
+}

@@ -21,3 +21,23 @@
   padding: 4rem 1.25rem;
   max-width: 980px;
 }
+
+button {
+  font-family: Gotham;
+  font-weight: 900;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.875rem;
+  width: 18rem;
+
+  &.primary {
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+  }
+
+  &.secondary {
+    border: 1px solid var(--light-grey);
+    background-color: var(--white);
+  }
+}
