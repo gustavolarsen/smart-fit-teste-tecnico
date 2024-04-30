@@ -1,0 +1,35 @@
+.unit-card {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid var(--super-light-grey);
+  border-radius: 8px;
+  background-color: var(--ultra-light-grey);
+  height: 360px;
+  width: 306px;
+
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .status {
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    &.opened {
+      color: var(--green);
+    }
+
+    &.closed {
+      color: var(--red);
+    }
+  }
+
+  .adress {
+    font-size: 0.75rem;
+    color: var(--light-grey);
+  }
+}
