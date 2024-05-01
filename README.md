@@ -1,27 +1,27 @@
-# SmartFitTesteTecnico
+# SmartFit Desafio Técnico Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Projeto realizado resolvendo o desafio técnico proposto para um processo seletivo de desenvolvedor Frontend.
 
-## Development server
+OBS: Não participei do processo, apenas fiz o desafio com intuito de praticar a programação com Angular e a resolução dos problemas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O desafio proposto pode ser acessado no repositório oficail [https://github.com/bioritmo/front-end-code-challenge-smartsite](https://github.com/bioritmo/front-end-code-challenge-smartsite/)
 
-## Code scaffolding
+## Pré requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  - NodeJs
+  - Angular 17
 
-## Build
+## Como rodar o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ - Faça o clone do repositório `https://github.com/gustavolarsen/smart-fit-teste-tecnico.git`
 
-## Running unit tests
+ - Pelo terminal acesse a pasta do projeto e execute `ng serve`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ - Acesse o `http://localhost:4200/` no navegador e projeto abrirá
 
-## Running end-to-end tests
+ - Selecione um item do filtro e clique em **ENCONTRAR UNIDADE**, assim o sistema vai acessar a API e carregar os dados listando as academias
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Exemplo da interface do sistema
 
-## Further help
+![image](https://github.com/gustavolarsen/smart-fit-teste-tecnico/assets/55494775/6a1038ca-557f-4560-910b-e356236e3eed)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
