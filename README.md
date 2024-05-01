@@ -8,7 +8,6 @@ O desafio proposto pode ser acessado no repositório oficail [https://github.com
 
 ## Pré requisitos
 
-  - NodeJs
   - Angular 17
 
 ## Como rodar o projeto
