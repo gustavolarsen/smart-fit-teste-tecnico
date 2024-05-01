@@ -40,7 +40,6 @@
       .button-wrapper {
         margin-top: 1rem;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
@@ -49,12 +48,12 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .filter {
     .filter-form {
       .form-group {
         .button-wrapper {
-          flex-direction: row;
+          flex-direction: column;
         }
       }
     }

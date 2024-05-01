@@ -5,11 +5,12 @@ import { ILocation } from '../../interfacaces/smartfit-location';
 import { LocationService } from '../../services/location.service';
 import { FilterComponent } from '../filter/filter.component';
 import { LocationComponent } from '../location/location.component';
+import { RulesComponent } from '../rules/rules.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FilterComponent, LocationComponent, NgFor],
+  imports: [CommonModule, NgFor, FilterComponent, LocationComponent, RulesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

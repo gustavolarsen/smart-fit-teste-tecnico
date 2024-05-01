@@ -48,3 +48,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .location {
+    .rules {
+      .items {
+        img {
+          width: 35px;
+        }
+      }
+    }
+  }
+}

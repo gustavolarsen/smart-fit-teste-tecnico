@@ -49,3 +49,9 @@ hr {
   border: none;
   background-color: var(--super-light-grey);
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+}

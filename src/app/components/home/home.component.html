@@ -9,6 +9,8 @@
 
   <app-filter (filters)="getFilters($event)"></app-filter>
 
+  <app-rules></app-rules>
+
   <section class="location-list">
     <app-location *ngFor="let location of ( locationList$ | async)" [location]="location">
     </app-location>
