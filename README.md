@@ -14,7 +14,9 @@ O desafio proposto pode ser acessado no repositório oficail [https://github.com
 
  - Faça o clone do repositório `https://github.com/gustavolarsen/smart-fit-teste-tecnico.git`
 
- - Pelo terminal acesse a pasta do projeto e execute `ng serve`
+ - Acesse a pasta do projeto pelo terminal e instale as dependências com o comando `npm install`
+
+ - Após a instalação das dependências, ainda na pasta do projeto, execute `ng serve`
 
  - Acesse o `http://localhost:4200/` no navegador e projeto abrirá
 
