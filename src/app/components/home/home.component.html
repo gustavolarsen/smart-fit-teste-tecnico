@@ -6,14 +6,12 @@
 
   <p>O horário de funcionamento das nossas unidades está seguindo os decretos de cada município. Por isso, confira aqui se a sua unidade está aberta e as medidas de segurança que estamos seguindo.
   </p>
-  <app-filter></app-filter>
 
-  <!-- Bloco apenas para testar disposicao dos cards, sera modificado
-  quando carregado dinamicamente -->
-  <div style="display: flex; justify-content: space-between; row-gap: 0.75rem; flex-wrap: wrap;">
-    <app-unit-card></app-unit-card>
-    <app-unit-card></app-unit-card>
-    <app-unit-card></app-unit-card>
-    <app-unit-card></app-unit-card>
-  </div>
+  <app-filter (filters)="getFilters($event)"></app-filter>
+
+  <section class="location-list">
+    <app-location *ngFor="let location of ( locationList$ | async)" [location]="location">
+    </app-location>
+  </section>
+
 </main>

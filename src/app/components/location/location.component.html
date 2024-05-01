@@ -1,0 +1,54 @@
+<article class="location">
+  <div class="card-wrapper">
+    @if (location.opened) {
+    <p class="status opened">Aberto</p>
+    }
+    @else {
+    <p class="status closed">Fechado</p>
+    }
+    <h3>{{ location.title }}</h3>
+    <div class="adress" [innerHtml]="location.content"> </div>
+    <hr />
+    <div class="rules">
+      <div class="items">
+        @if (location.mask === 'required') {
+        <img src="../../../assets/images/required-mask.png" alt="required mask">
+        }
+        @else {
+        <img src="../../../assets/images/recommended-mask.png" alt="recommended mask">
+        }
+      </div>
+      <div class="items">
+        @if (location.towel === 'required') {
+        <img src="../../../assets/images/required-towel.png" alt="required towel">
+        }
+        @else {
+        <img src="../../../assets/images/recommended-towel.png" alt="recommended towel">
+        }
+      </div>
+      <div class="items">
+        @if (location.fountain === 'partial') {
+        <img src="../../../assets/images/partial-fountain.png" alt="partial fountain">
+        }
+        @else {
+        <img src="../../../assets/images/forbidden-fountain.png" alt="forbidden fountain">
+        }
+      </div>
+      <div class="items">
+        @if (location.lockerroom === 'partial') {
+        <img src="../../../assets/images/partial-lockerroom.png" alt="partial lockerroom">
+        }
+        @else if (location.fountain === 'allowed') {
+        <img src="../../../assets/images/allowed-lockerroom.png" alt="allowed lockerroom">
+        }
+        @else {
+        <img src="../../../assets/images/forbidden-lockerroom.png" alt="forbidden lockerroom">
+        }
+      </div>
+
+    </div>
+    <div class="schedule" *ngFor="let schedule of location.schedules">
+      <strong>{{ schedule.weekdays }}:</strong> {{ schedule.hour }}
+    </div>
+  </div>
+</article>
