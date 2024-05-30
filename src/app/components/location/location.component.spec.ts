@@ -1,5 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { locationMock } from '../../mocks/location.mock';
 import { LocationComponent } from './location.component';
 
 describe('LocationComponent', () => {
@@ -8,12 +9,12 @@ describe('LocationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LocationComponent]
-    })
-    .compileComponents();
-    
+      imports: [LocationComponent, HttpClientModule],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(LocationComponent);
     component = fixture.componentInstance;
+    component.location = locationMock;
     fixture.detectChanges();
   });
 
